@@ -1,0 +1,18 @@
+line-length = 88  # Same as Black's default line length
+#fix = true  # Allow Ruff to fix issues automatically (isort + Black-style formatting)
+target-version = "py310"
+
+exclude = [
+    ".devcontainer/devcontainer.json",  # Exclude the entire .devcontainer directory
+]
+
+[lint]
+select = ["E", "F", "I"]  # F for flake8's pyflakes, E for pycodestyle, I for isort
+
+[format]
+# Enable reformatting of code snippets in docstrings.
+docstring-code-format = true
+skip-magic-trailing-comma = false
+
+[lint.isort]
+case-sensitive = true
