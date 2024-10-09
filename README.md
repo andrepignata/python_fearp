@@ -38,7 +38,9 @@ Baixe o repositório como zip e extraia os arquivos.
 Este projeto recomenda o uso de um ambiente virtual para isolar as dependências. Para criar um ambiente virtual chamado `fearp`, utilize o **Conda**:
 
 ```bash
-conda create -f conda_env.yml
+conda create -n fearp python=3.10
+conda activate fearp
+pip install -r requirements.txt
 ```
 
 Este projeto utiliza **Jupyter Notebook**, **Streamlit**, **Pandas** e **Matplotlib** que são instalados automaticamente com a criação do ambiente.

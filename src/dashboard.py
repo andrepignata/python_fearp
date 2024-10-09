@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 # Carregar o arquivo CSV
-df = pd.read_csv("tratado.csv")
+df = pd.read_csv("data/tratado.csv")
 
 # Converter a coluna 'data' para o formato datetime
 df["data"] = pd.to_datetime(df["data"])
